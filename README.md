@@ -38,5 +38,5 @@
 
 ## 測試資料下載
 
-由於測試用資料庫較大，請從 [Google Drive 下載 datatest.zip]()  
+由於測試用資料庫較大，請從 [Google Drive 下載 datatest.zip](https://drive.google.com/file/d/1G9T3DoqDkuVpx2HwmN86D-9cLLGBhA-z/view?usp=drive_link)  
 下載後解壓縮，將 `data_test.db` 放到專案根目錄即可。
