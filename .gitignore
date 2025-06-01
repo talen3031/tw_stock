@@ -1,0 +1,19 @@
+# 忽略主要的資料庫檔案
+data.db
+data_test.db
+data_test.zip
+
+# 如果你有要上傳的特定小檔，請在下面用 ! 排除
+#!sample.db
+
+# 一般常見的 Python 暫存資料
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoint
+.ipynb_checkpoints/
+
+# VSCode 設定檔
+.vscode/
