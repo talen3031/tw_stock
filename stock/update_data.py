@@ -13,7 +13,7 @@ class update_data():
     def __init__(self):
         self.today=datetime.datetime.today()
         self.func_="每日股價爬蟲,更新_每日股價,月報表爬蟲,更新_月報表,營益分析彙總表爬蟲,更新_營益分析彙總表"
-        db =sqlite3.connect(os.path.join('data_test.db'))
+        db =sqlite3.connect(os.path.join('data.db'))
         
         s1='SELECT  max(date)  FROM daily_price_上市'
         df1=pd.read_sql(con=db,sql=s1)

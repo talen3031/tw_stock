@@ -12,7 +12,7 @@ from matplotlib import pyplot as plt
 
 class tw_stock():
     def __init__(self):
-        self.connect= sqlite3.connect('data_test.db')
+        self.connect= sqlite3.connect('data.db')
         #證券代號=pd.read_sql(con=self.connect,sql='select distinct 證券代號 from daily_price ')
         #self.stocklist=證券代號['證券代號'].tolist()
         self.func_="get_stock ,get,get_均線,get_technical_index"
