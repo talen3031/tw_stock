@@ -188,3 +188,27 @@ def 外陸資連三買超股數(外陸資,volume,x=-1):
     st["stocks"]=stocks
     st["date"]=date
     return st
+"""""
+雙均線 + ADX 指標策略回測
+
+進場：
+
+快線 SMA(10) > 慢線 SMA(30)
+
+ADX(14) > 25
+
+出場：均線慢線大於快線
+"""""
+def 雙均線ADX策略(fast_ma, slow_ma, adx_val, close, adx_threshold=25, x=-1):
+    cond1 = fast_ma.iloc[x] > slow_ma.iloc[x]
+    cond2 = adx_val.iloc[x] > adx_threshold
+    match = cond1 & cond2
+
+    date = close.iloc[x].name
+    stocks = close.iloc[x][match].index.values
+
+    return {
+        "string": f"{date} 雙均線ADX策略進場：{len(stocks)} 筆股票",
+        "stocks": stocks,
+        "date": date
+    }
